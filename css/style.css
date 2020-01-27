@@ -1,0 +1,44 @@
+body {
+  overflow-x: hidden;
+  word-wrap: normal;
+}
+.card {
+  width: 100%;
+  align-self: center;
+}
+@media only screen and (max-width: 500px) {
+  #carouselExampleCaptions,
+  #content,
+  .inner {
+    height: 200px;
+  }
+  h1 {
+    font-size: 2px;
+  }
+}
+
+.tile1 {
+  color: white;
+  text-align: center;
+}
+#myfirst {
+  background-image: url("../img/Group\ 87@2x.png");
+  background-size: cover;
+  
+}
+#mysecond {
+  background-image: url("../img/Group\ 88@2x.png");
+  background-size: cover;
+}
+.footerText {
+  font-size: 12px;
+  font-weight: bold;
+  color: #484848;
+}
+#d11{
+	width:90%;margin:auto;
+}
+#qq
+{
+	font-size:5vw;margin-top:15%;
+}
