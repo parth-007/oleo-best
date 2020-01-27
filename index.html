@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
 </head>
 <body>
 
@@ -38,9 +40,9 @@
   <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar1">
     <ul class="navbar-nav"> 
         <li class="navbar-item">
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" type="post">
                 <input class="form-control mr-sm-2" id="bingsearch" type="text" placeholder="Search" aria-label="Search" value="" >
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onClick=getsearch()>Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onClick=getsearch()>Search</button>
             </form>
         </li>
     </ul>
@@ -61,9 +63,9 @@
 
     <div id="carouselExampleCaptions" class="carousel slide">
         <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active" ></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" id="content">
             <div class="carousel-item active inner">
@@ -235,11 +237,14 @@
         crossorigin="anonymous"></script>
 		
 	<script src="js/index.js"></script>
-	<script>
-		
-	function getsearch(){
-		var input = document.getElementById("bingsearch").value;
-		window.location = 'https://www.bing.com/search?q='+input;
-	}
-	</script>
+	<script type="text/javascript">
+    
+
+        function getsearch() {
+            
+          var input = document.getElementById("bingsearch").value;
+          window.location  = 'https://www.bing.com/search?q=' + input;
+          return false;
+        }
+          </script>
 </html>
